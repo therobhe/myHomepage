@@ -435,7 +435,7 @@ a.btn:hover {
   font-size: 16px;
 }
 .chart-easy-pie {
-  positon: relative;
+  position: relative;
 }
 .chart {
   width: 110px;
@@ -752,6 +752,49 @@ a.btn:hover {
     margin: 0 auto;
   }
 }
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+#breakout  {
+  width: 100%;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  justify-content: center;
+  text-align: center;
+  background-color: #05386B;
+}
+
+a {
+  color: #05386B;
+}
+
+p.project-title  {
+    color: #E59400;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
