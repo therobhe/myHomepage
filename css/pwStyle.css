@@ -1,6 +1,6 @@
 body {
-    background-color: darkblue;
-    color: white;
+    background-color: #05386B;
+    color: #e59400;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +10,10 @@ body {
 }
 
 #wrapper  {
-    background-color: red;
+    background-color: #05386B;
     padding: 2rem;
     border-radius: 2rem;
-    border: 2px solid white;
+    border: 2px solid #e59400;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +48,7 @@ body {
 
 #output  {
     border-radius: 1rem;
-    border: 2px solid white;
+    border: 2px solid #e59400;
     padding: 3px 50px;
     margin: 1rem;
     height: 2rem;
@@ -62,12 +62,12 @@ body {
 #execute  {
     grid-column: span 2;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #e59400;
     border-radius: 1rem;
     padding: 1rem 1rem;
     font-weight: bold;
     font-size: 10px;
-    color: white;
+    color: #e59400;
     cursor: pointer;
 }
 
