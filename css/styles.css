@@ -778,6 +778,10 @@ a.btn:hover {
   border: 2px solid #e59400;
 }
 
+.project-title:hover  {
+  background-color: #ffffff33;
+}
+
 a {
   color: #05386B;
 }
