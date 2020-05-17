@@ -775,6 +775,7 @@ a.btn:hover {
   justify-content: center;
   text-align: center;
   background-color: #05386B;
+  border: 2px solid #e59400;
 }
 
 a {
