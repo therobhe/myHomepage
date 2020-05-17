@@ -26,7 +26,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #007888;
+  color: #e59400;
 }
 a:focus {
   text-decoration: none;
@@ -778,8 +778,8 @@ a.btn:hover {
   border: 2px solid #e59400;
 }
 
-.project-title:hover  {
-  background-color: #ffffff33;
+.project-showreel:hover  {
+  background-color: #e5940033;
 }
 
 a {
