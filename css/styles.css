@@ -763,6 +763,7 @@ a.btn:hover {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  margin-bottom: 25px;
 }
 
 #breakout  {
@@ -776,6 +777,7 @@ a.btn:hover {
   text-align: center;
   background-color: #05386B;
   border: 2px solid #e59400;
+  margin-bottom: 0px;
 }
 
 .project-showreel:hover  {
