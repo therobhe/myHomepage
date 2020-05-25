@@ -792,13 +792,24 @@ p.project-title  {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 4rem;
-  width: auto;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
 }
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
