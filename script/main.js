@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('.scrollto').on('click', function(e){
 
         //store hash
-        var target = this.hash;
+        let target = this.hash;
 
         e.preventDefault();
 
@@ -20,8 +20,8 @@ $(document).ready(function() {
 
         $('#page-nav-wrapper').removeClass('fixed');
 
-         var scrollTop = $(this).scrollTop();
-         var topDistance = $('#page-nav-wrapper').offset().top;
+         let scrollTop = $(this).scrollTop();
+         let topDistance = $('#page-nav-wrapper').offset().top;
 
          if ( (topDistance) > scrollTop ) {
             $('#page-nav-wrapper').removeClass('fixed');
