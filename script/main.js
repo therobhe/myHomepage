@@ -33,4 +33,9 @@ $(document).ready(function() {
          }
 
     });
+
+    /* ======= Copyright - Yearly Update ======= */
+    (function(){
+        $(".currYear")[0].innerHTML = new Date().getFullYear();
+    })()
 });
