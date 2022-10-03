@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hey Julia!">
+    <meta name="author" content="Robert Heinemann">
+    <title>Hey Julia!</title>
+    <style>
+        main {
+            text-align: center;
+        }
+        .buttonBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Hey Julia! <br> Can we hang out sometime?</h1>
+        <img src="https://pics.me.me/pretty-please-me-13557658.png" alt="Please???" width="250" height="266">
+        <div class="buttonBox">
+            <input id="yes" type="button" value="YES!!!!">
+            <input id="no" type="button" value="NOOOOOOOOOOOOOOO">
+        </div>
+    </main>
+
+    <script text="text/javascript">
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var flag = 1
+            const yesBtn = document.querySelector("#yes")
+            const noBtn = document.querySelector("#no")
+
+            yesBtn.addEventListener("click", () => {
+               alert("YEEEEEEEEEESSSSS, WOOOHOOOOOO!")
+            });
+
+            noBtn.addEventListener("click", () => {
+                switch(flag) {
+                    case 1:
+                        noBtn.style.position = "absolute"
+                        noBtn.style.marginTop = "50px"
+                        noBtn.style.marginLeft = "150px"
+                        flag++
+                        break
+                    case 2:
+                        noBtn.style.marginTop = "-50px"
+                        noBtn.style.marginLeft = "-150px"
+                        flag++
+                        break
+                    case 3:
+                        noBtn.style.marginTop = "200px"
+                        noBtn.style.marginLeft = "200px"
+                        flag++
+                        break
+                    case 4:
+                        noBtn.style.marginTop = "-200px"
+                        noBtn.style.marginLeft = "-200px"
+                        flag++
+                        break
+                    case 5:
+                        noBtn.style.marginTop = "-90px"
+                        noBtn.style.marginLeft = "-50px"
+                        flag = 1
+                        break
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>
+
