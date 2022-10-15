@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hey Julia!">
     <meta name="author" content="Robert Heinemann">
-    <title>Hey Julia!</title>
+    <title>Hey!</title>
     <style>
         main {
             text-align: center;
@@ -21,7 +21,7 @@
 
 <body>
     <main>
-        <h1>Hey Julia! <br> Can we hang out sometime?</h1>
+        <h1>Hey <span id="mainTarget">Julia</span>! <br> Can we hang out sometime?</h1>
         <img src="https://pics.me.me/pretty-please-me-13557658.png" alt="Please???" width="250" height="266">
         <div class="buttonBox">
             <input id="yes" type="button" value="YES!!!!">
@@ -34,6 +34,15 @@
             var flag = 1
             const yesBtn = document.querySelector("#yes")
             const noBtn = document.querySelector("#no")
+            const url = window.location.search;
+            const urlParams = new URLSearchParams(url);
+            const q = urlParams.get('q');
+
+            if(q == 1) {
+                document.getElementById("mainTarget").innerText = "Julia";
+            } else {
+                document.getElementById("mainTarget").innerText = "Christina";
+            }
 
             yesBtn.addEventListener("click", () => {
                alert("YEEEEEEEEEESSSSS, WOOOHOOOOOO!")
